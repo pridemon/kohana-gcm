@@ -1,0 +1,3 @@
+[submodule "vendor/php-gcm"]
+	path = vendor/php-gcm
+	url = https://github.com/lkorth/php-gcm.git
