@@ -1,10 +1,10 @@
 <?php defined('SYSPATH') or die('No direct script access.');
 
-class GCMServer_Core {
+class GCMServer_Core extends \PHP_GCM\Sender {
 
     public function __construct()
     {
-        return new \PHP_GCM\Sender( Kohana::$config->load('gcm')->api_key );
+        return parent::__construct(Kohana::$config->load('gcm')->api_key);
     }
 
 }
